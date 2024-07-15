@@ -1,0 +1,22 @@
+1- Fix the menu: show ingredients.   ==>  Fixed
+
+2- Fix when get the input( no difference between lowercase and uppercase) ( different input, repeat the menu).  
+                                     ==> Fixed
+
+3- Add pizza toppings to the menu: extra cheese, mayo, olive oil.
+			             ==> Fixed
+
+4- Customers may order more than a pizza, quantity should be added to the solution
+				     ==> 
+
+5- If any error or pizza is unavailable, show appropriate message to the user or handle this situation properly.
+				     ==>
+
+6- Complete the list of pizzas       ==> Fixed
+
+                                      
+7- Refactor the code ( Remove extra codes, add error handling ). - Create multiple method in the program.cs
+                                     ==>
+
+8- Fix the issue related to referencing (System.Console.WriteLine();)
+			             ==> Fixed
