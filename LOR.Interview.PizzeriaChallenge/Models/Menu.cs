@@ -42,12 +42,27 @@ namespace LOR.Interview.PizzeriaChallenge.Models
         private void AddToppingsToMenuItems()
         {
             // Add toppings to Brisbane menu items
-            BrisbaneMenu[0].AddTopping("extra cheese");
-            BrisbaneMenu[1].AddTopping("olives");
+            BrisbaneMenu[0].AddTopping(Constants.ExtraCheese);
+            BrisbaneMenu[0].AddTopping(Constants.OliveOil);
+            BrisbaneMenu[0].AddTopping(Constants.Mayo);  
+            
+            BrisbaneMenu[1].AddTopping(Constants.ExtraCheese);
+            BrisbaneMenu[1].AddTopping(Constants.OliveOil);
+            BrisbaneMenu[1].AddTopping(Constants.Mayo);
+
+            BrisbaneMenu[2].AddTopping(Constants.ExtraCheese);
+            BrisbaneMenu[2].AddTopping(Constants.OliveOil);
+            BrisbaneMenu[2].AddTopping(Constants.Mayo);
+
 
             // Add toppings to Sydney menu items
-            SydneyMenu[0].AddTopping("extra cheese");
-            SydneyMenu[1].AddTopping("extra cheese");
+            SydneyMenu[0].AddTopping(Constants.ExtraCheese);
+            SydneyMenu[0].AddTopping(Constants.OliveOil);
+            SydneyMenu[0].AddTopping(Constants.Mayo);
+
+            SydneyMenu[1].AddTopping(Constants.ExtraCheese);
+            SydneyMenu[1].AddTopping(Constants.OliveOil);
+            SydneyMenu[1].AddTopping(Constants.Mayo);
         }
 
         /// <summary>
@@ -67,16 +82,16 @@ namespace LOR.Interview.PizzeriaChallenge.Models
         // Define menu items for Brisbane with initial toppings
         private List<PizzaInfo> BrisbaneMenu = new List<PizzaInfo>
         {
-            new PizzaInfo("Capriciosa", new List<string> { "mushrooms", "cheese", "ham", "mozzarella" }, 20),
-            new PizzaInfo("Florenza", new List<string> { "olives", "pastrami", "mozzarella", "onion" }, 21),
-            new PizzaInfo("Margherita", new List<string> { "mozzarella", "onion", "garlic", "oregano" }, 22)
+            new PizzaInfo(Constants.Capriciosa, Constants.CapriciosaIngredients, Constants.DefaultBakeTemperature),
+            new PizzaInfo(Constants.Florenza, Constants.FlorenzaIngredients, Constants.FlorenzaBakeTemperature),
+            new PizzaInfo(Constants.Margherita, Constants.MargheritaIngredients, Constants.MargheritaBakeTemperature)
         };
 
         // Define menu items for Sydney with initial toppings
         private List<PizzaInfo> SydneyMenu = new List<PizzaInfo>
         {
-            new PizzaInfo("Capriciosa", new List<string> { "mushrooms", "cheese", "ham", "mozzarella" }, 30),
-            new PizzaInfo("Inferno", new List<string> { "chili peppers", "mozzarella", "chicken", "cheese" }, 31)
+            new PizzaInfo(Constants.Capriciosa, Constants.CapriciosaIngredients, Constants.DefaultBakeTemperature),
+            new PizzaInfo(Constants.Inferno, Constants.InfernoIngredients, Constants.InfernoBakeTemperature)
         };
 
         // Define an empty list for Gold Coast menu items (can be filled later)

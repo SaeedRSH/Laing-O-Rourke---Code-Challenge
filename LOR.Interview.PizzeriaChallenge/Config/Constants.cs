@@ -36,6 +36,17 @@ namespace LOR.Interview.PizzeriaChallenge.Config
         public const string Margherita = "margherita";
         public const string Inferno = "inferno";
 
+        // Pizza Ingredients 
+        public static readonly List<string> CapriciosaIngredients = new List<string> { "mushrooms", "cheese", "ham", "mozzarella" };
+        public static readonly List<string> FlorenzaIngredients = new List<string> { "olives", "pastrami", "mozzarella", "onion" };
+        public static readonly List<string> MargheritaIngredients = new List<string> { "mozzarella", "onion", "garlic", "oregano" };
+        public static readonly List<string> InfernoIngredients = new List<string> { "chili peppers", "mozzarella", "chicken", "cheese" };
+
+        // Pizza toppings 
+        public const string ExtraCheese = "extra cheese";
+        public const string OliveOil = "olives";
+        public const string Mayo = "Mayo";
+
         // Baking temperatures and times
         public const int DefaultBakeTemperature = 200;
         public const int InfernoBakeTemperature = 220;
